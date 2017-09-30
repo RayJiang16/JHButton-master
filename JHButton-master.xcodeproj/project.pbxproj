@@ -15,6 +15,9 @@
 		FC45B4D11F7CD57F0039E988 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC45B4CF1F7CD57F0039E988 /* LaunchScreen.storyboard */; };
 		FC45B4DC1F7CD57F0039E988 /* JHButton_masterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC45B4DB1F7CD57F0039E988 /* JHButton_masterTests.m */; };
 		FC45B4E71F7CD5800039E988 /* JHButton_masterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC45B4E61F7CD5800039E988 /* JHButton_masterUITests.m */; };
+		FC45B4F71F7CD5C60039E988 /* JHButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FC45B4F61F7CD5C60039E988 /* JHButton.m */; };
+		FC45B4FA1F7CD61B0039E988 /* UIView+JHExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FC45B4F91F7CD61B0039E988 /* UIView+JHExtension.m */; };
+		FC45B4FD1F7CD62B0039E988 /* MMMaterialDesignSpinner.m in Sources */ = {isa = PBXBuildFile; fileRef = FC45B4FC1F7CD62B0039E988 /* MMMaterialDesignSpinner.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		FC45B4E21F7CD5800039E988 /* JHButton-masterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "JHButton-masterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC45B4E61F7CD5800039E988 /* JHButton_masterUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHButton_masterUITests.m; sourceTree = "<group>"; };
 		FC45B4E81F7CD5800039E988 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC45B4F51F7CD5C60039E988 /* JHButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHButton.h; sourceTree = "<group>"; };
+		FC45B4F61F7CD5C60039E988 /* JHButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHButton.m; sourceTree = "<group>"; };
+		FC45B4F81F7CD61A0039E988 /* UIView+JHExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JHExtension.h"; sourceTree = "<group>"; };
+		FC45B4F91F7CD61B0039E988 /* UIView+JHExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JHExtension.m"; sourceTree = "<group>"; };
+		FC45B4FB1F7CD62B0039E988 /* MMMaterialDesignSpinner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMMaterialDesignSpinner.h; sourceTree = "<group>"; };
+		FC45B4FC1F7CD62B0039E988 /* MMMaterialDesignSpinner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMMaterialDesignSpinner.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +110,7 @@
 		FC45B4C01F7CD57F0039E988 /* JHButton-master */ = {
 			isa = PBXGroup;
 			children = (
+				FC45B4F41F7CD5BB0039E988 /* JHButton */,
 				FC45B4C41F7CD57F0039E988 /* AppDelegate.h */,
 				FC45B4C51F7CD57F0039E988 /* AppDelegate.m */,
 				FC45B4C71F7CD57F0039E988 /* ViewController.h */,
@@ -138,6 +148,19 @@
 				FC45B4E81F7CD5800039E988 /* Info.plist */,
 			);
 			path = "JHButton-masterUITests";
+			sourceTree = "<group>";
+		};
+		FC45B4F41F7CD5BB0039E988 /* JHButton */ = {
+			isa = PBXGroup;
+			children = (
+				FC45B4F51F7CD5C60039E988 /* JHButton.h */,
+				FC45B4F61F7CD5C60039E988 /* JHButton.m */,
+				FC45B4FB1F7CD62B0039E988 /* MMMaterialDesignSpinner.h */,
+				FC45B4FC1F7CD62B0039E988 /* MMMaterialDesignSpinner.m */,
+				FC45B4F81F7CD61A0039E988 /* UIView+JHExtension.h */,
+				FC45B4F91F7CD61B0039E988 /* UIView+JHExtension.m */,
+			);
+			path = JHButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +302,9 @@
 				FC45B4C91F7CD57F0039E988 /* ViewController.m in Sources */,
 				FC45B4C61F7CD57F0039E988 /* AppDelegate.m in Sources */,
 				FC45B4C31F7CD57F0039E988 /* main.m in Sources */,
+				FC45B4FA1F7CD61B0039E988 /* UIView+JHExtension.m in Sources */,
+				FC45B4FD1F7CD62B0039E988 /* MMMaterialDesignSpinner.m in Sources */,
+				FC45B4F71F7CD5C60039E988 /* JHButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +455,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C7G6G2QS28;
 				INFOPLIST_FILE = "JHButton-master/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rayjiang.JHButton-master";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -441,6 +468,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C7G6G2QS28;
 				INFOPLIST_FILE = "JHButton-master/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rayjiang.JHButton-master";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -516,6 +544,7 @@
 				FC45B4ED1F7CD5800039E988 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FC45B4EE1F7CD5800039E988 /* Build configuration list for PBXNativeTarget "JHButton-masterTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +553,7 @@
 				FC45B4F01F7CD5800039E988 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FC45B4F11F7CD5800039E988 /* Build configuration list for PBXNativeTarget "JHButton-masterUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +562,7 @@
 				FC45B4F31F7CD5800039E988 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
